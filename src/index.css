@@ -1,0 +1,182 @@
+/* STEP 1: Load your fonts */
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+
+/* STEP 2: Import Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* STEP 3: Define your design system */
+@layer base {
+  :root {
+    /* Cinematic Dark Theme */
+    --background: 0 0% 3%;
+    --foreground: 180 100% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 180 100% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 180 100% 98%;
+
+    /* Neon Cyan Primary */
+    --primary: 187 100% 50%;
+    --primary-foreground: 0 0% 3%;
+
+    /* Neon Purple Secondary */
+    --secondary: 270 100% 50%;
+    --secondary-foreground: 0 0% 3%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 180 20% 65%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 0 0% 3%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 187 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom cinematic tokens */
+    --neon-cyan: 187 100% 50%;
+    --neon-purple: 270 100% 50%;
+    --neon-pink: 320 100% 60%;
+    --glass-bg: 0 0% 15%;
+    --glass-border: 0 0% 25%;
+    
+    /* Glow effects */
+    --glow-cyan: 0 0 20px hsl(187 100% 50% / 0.5);
+    --glow-purple: 0 0 20px hsl(270 100% 50% / 0.5);
+    --glow-cyan-intense: 0 0 30px hsl(187 100% 50% / 0.8), 0 0 60px hsl(187 100% 50% / 0.4);
+    --glow-purple-intense: 0 0 30px hsl(270 100% 50% / 0.8), 0 0 60px hsl(270 100% 50% / 0.4);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satoshi', sans-serif; /* Corrected to Satoshi */
+    font-weight: 700;
+  }
+
+  /* Custom animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: var(--glow-cyan);
+    }
+    50% {
+      box-shadow: var(--glow-cyan-intense);
+    }
+  }
+
+  @keyframes rotate-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Utility classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  .animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-purple)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, hsl(var(--glass-bg) / 0.4), hsl(var(--glass-bg) / 0.2));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border) / 0.3);
+  }
+
+  .neon-border {
+    border: 1px solid hsl(var(--neon-cyan));
+    box-shadow: var(--glow-cyan);
+  }
+
+  .neon-border-purple {
+    border: 1px solid hsl(var(--neon-purple));
+    box-shadow: var(--glow-purple);
+  }
+}
