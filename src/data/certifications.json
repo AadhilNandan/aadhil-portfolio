@@ -1,0 +1,51 @@
+[
+  {
+    "image": "/src/assets/certifications/AWS Solutions Architecture Completion Certificate.jpg",
+    "name": "AWS Solutions Architecture Completion Certificate",
+"description": "I just completed the AWS Solutions Architect course on Forage. In the simulation, I designed a simple and scalable hosting architecture using Elastic Beanstalk for a client facing significant growth and slow response times. I explained how it works and the cost calculations. #AWS #CloudComputing #ElasticBeanstalk #SolutionsArchitect #TechForGood",
+    "link": "https://www.linkedin.com/posts/aadhil-nandan_aws-cloudcomputing-elasticbeanstalk-activity-7385577046590029825-7_fc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwosGYBDprLbK9eEbPzdRBFmGadNyh69HQ"
+  },
+  {
+    "image": "/src/assets/certifications/Deloitte Australia Cyber Completion Certificate.jpg",
+    "name": "Deloitte Australia Cyber Completion Certificate",
+    "description": "I just completed Deloitte Australia's Technology program on Forage. In the simulation, I completed a job simulation that involved development and coding, and I wrote a proposal for creating a dashboard. #Forage #Deloitte #Technology #CareerDevelopment #CodingSkills",
+    "link": "https://www.linkedin.com/posts/aadhil-nandan_forage-deloitte-technology-activity-7387126157378461696-78uW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwosGYBDprLbK9eEbPzdRBFmGadNyh69HQ"
+  },
+  {
+    "image": "/src/assets/certifications/Eureka 2025.png",
+    "name": "Eureka 2025",
+    "description": "Excited to share my first experience with an idea pitching competition! I led team AuraVolt at EUREKA! 2025, presenting our vision for sustainable energy in cities. We learned so much. Check out the full article for our project concept and takeaways. #Eurek2025 #Sustainability #Innovation #TeamLeadership",
+    "link": "https://www.linkedin.com/posts/aadhil-nandan_eurek2025-sustainability-innovation-activity-7388136149749460992-Rt9F?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwosGYBDprLbK9eEbPzdRBFmGadNyh69HQ"
+  },
+  {
+    "image": "/src/assets/certifications/Nasa space apps challenge certificate_page_1.jpg",
+    "name": "Nasa space apps challenge certificate",
+    "description": "I’m excited to share a detailed overview of my role as Team Lead for the NASA Space Apps Challenge 2025! In this project, I guided Dream Architects in creating AstraLens, an interactive lunar map powered by a custom Python backend and a Gemini-powered RAG Assistant. Together, we transformed trillions of pixels of NASA data into an accessible tool for both planetary researchers and enthusiasts. #NASA #SpaceApps #TeamLead #AstraLens #Coding #Gemini",
+    "link": "https://www.linkedin.com/posts/aadhil-nandan_nasa-spaceapps-teamlead-activity-7385583339279323136-Ypll?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwosGYBDprLbK9eEbPzdRBFmGadNyh69HQ"
+  },
+  {
+    "image": "/src/assets/certifications/Tata GenAI Powered Data Analytics Completion Certificate.jpg",
+    "name": "Tata GenAI Powered Data Analytics Completion Certificate",
+"description": "Proud to share I've completed the GenAI Powered Data Analytics job simulation by Tata iQ on Forage! This involved translating data science into strategic, actionable business outcomes for Collections. Key areas of focus: Developing an XGBoost-based predictive model to identify at-risk customers (delinquency risk). Proposing a SMART 'Utilisation Alert' pilot to shift the collections strategy from reactive to proactive and preventative. Ensuring ethical and responsible AI deployment by implementing bias detection (DIR, Recall) and transparency via SHAP values and human-in-the-loop oversight. Ready to drive responsible, data-led transformation! #AIStrategy #ResponsibleAI #DataScience #Forage #Tata",
+    "link": "https://www.linkedin.com/posts/aadhil-nandan_aistrategy-responsibleai-datascience-activity-7385682445196652544-HSgh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwosGYBDprLbK9eEbPzdRBFmGadNyh69HQ"
+  },
+  {
+    "image": "/src/assets/certifications/Technology job Simulation Deloitte.jpg",
+    "name": "Technology job Simulation Deloitte",
+    "description": "I recently completed Deloitte Australia's Cyber program on Forage. In the simulation, I engaged in a job that involved analysing web activity logs, assisted a client dealing with a cybersecurity breach, and answered questions to identify suspicious user activity. #CyberSecurity #Deloitte #Forage #CareerDevelopment",
+    "link": "https://www.linkedin.com/posts/aadhil-nandan_cybersecurity-deloitte-forage-activity-7385575549869621248-JW42?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFwosGYBDprLbK9eEbPzdRBFmGadNyh69HQ"
+  },
+  {
+    "image": "/src/assets/certifications/Certificate of Achievement - Python Foundation Certification - Infosys Springboard.jpg",
+    "name": "Certificate of Achievement - Python Foundation Certification - Infosys Springboard",
+    "description": "Description for Certificate of Achievement - Python Foundation Certification - Infosys Springboard.",
+    "link": "https://www.linkedin.com/in/aadhil-nandan/recent-activity/all/"
+  },
+  {
+    "image": "/src/assets/certifications/Course Completion Certificate - Generative AI for All - Infosys Springboard.jpg",
+    "name": "Course Completion Certificate - Generative AI for All - Infosys Springboard",
+    "description": "Description for Course Completion Certificate - Generative AI for All - Infosys Springboard.",
+    "link": "https://www.linkedin.com/in/aadhil-nandan/recent-activity/all/"
+  }
+
+]
