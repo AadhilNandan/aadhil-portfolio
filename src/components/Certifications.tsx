@@ -21,7 +21,7 @@ const Certifications = () => {
       const resolved = await Promise.all(
         certificationsData.map(async (cert) => {
           // Dynamically import the image based on its path
-          const imageModule = await import(/* @vite-ignore */ cert.image);
+          const imageModule = await import(cert.image);
           return {
             ...cert,
             image: imageModule.default,
