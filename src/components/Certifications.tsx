@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -13,28 +13,11 @@ import {
 import certificationsData from "../data/certifications.json";
 
 const Certifications = () => {
-  const [resolvedCertifications, setResolvedCertifications] = useState([]);
   const [showAll, setShowAll] = useState(false);
 
-  useEffect(() => {
-    const resolveImages = async () => {
-      const resolved = await Promise.all(
-        certificationsData.map(async (cert) => {
-          // Dynamically import the image based on its path
-          const imageModule = await import(cert.image);
-          return {
-            ...cert,
-            image: imageModule.default,
-          };
-        })
-      );
-      setResolvedCertifications(resolved);
-    };
-
-    resolveImages();
-  }, []);
-
-  const certificationsToShow = showAll ? resolvedCertifications : resolvedCertifications.slice(0, 3);
+  const certificationsToShow = showAll
+    ? certificationsData
+    : certificationsData.slice(0, 3);
 
   return (
     <section id="certifications" className="py-32 relative overflow-hidden">
@@ -119,7 +102,7 @@ const Certifications = () => {
           ))}
         </div>
 
-        {resolvedCertifications.length > 3 && (
+        {certificationsData.length > 3 && (
           <div className="text-center mt-12">
             <Button
               variant="outline"
